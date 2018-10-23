@@ -6,6 +6,6 @@ module.exports = {
   SENDER_EMAIL_ID: 'priyanka.njoy9@gmail.com',
   SENDER_EMAIL_PASSWORD: 'butterfly4$',
   RECIEVER_EMAIL_ID: 'priyanka.njoy9@gmail.com',
-  EMAIL_SUBJECT: 'Quotation created from ALEXA',
-  EMAIL_BODY: 'Details of the Quotation created from ALEXA is attached'
+  EMAIL_SUBJECT: 'Quotation created from Amazon ALEXA',
+  EMAIL_BODY: 'Details of the Quotation created from Amazon ALEXA is attached'
 };

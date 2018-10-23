@@ -13,7 +13,7 @@ function pdfGeneratorService() {
     .then(data => htmlGenerator(templateFile, data))  // Builds HTML
     .then(html => generatePDF(html))      // Builds PDF
     .then(result => generateEmail(result.filename))   // Send Email
-    .catch((err) => console.log('ERROR : ' + err));
+    .catch(err => console.log(`ERROR ${err}`));
 }
 
 module.exports = pdfGeneratorService;

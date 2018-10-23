@@ -21,10 +21,7 @@ var mailOptions = {
   subject: CONSTANTS.EMAIL_SUBJECT,
   text: CONSTANTS.EMAIL_BODY,
   attachments: [
-    {
-      filename: 'test.pdf',// file on disk as an attachment
-      path: './output/test.pdf' // stream this file
-    }
+    
   ]
 };
 
@@ -39,9 +36,12 @@ var parseCB = (error, resp) => {
 
 function emailGeneratorService(filePath) {
   //console.log('Mailing with attchment - ' + filePath);
-  let attachment = getFileParams(filePath)
-  mailOptions.attachments.push(attachment);
 
+  if(filePath) {
+    let attachment = getFileParams(filePath)
+    mailOptions.attachments.push(attachment);
+  }
+  
   return transporter.sendMail(mailOptions, parseCB);
 }
 
