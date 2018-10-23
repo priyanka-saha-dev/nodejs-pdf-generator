@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-pdf-generator",
+  "version": "1.0.0",
+  "description": "Generate PDF from JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab-cts.stackroute.in/Priyanka.Saha2/nodejs-pdf-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "html-pdf": "^2.2.0",
+    "jquery": "^3.3.1",
+    "nodemailer": "^4.6.8",
+    "nodemon": "^1.18.4"
+  }
+}

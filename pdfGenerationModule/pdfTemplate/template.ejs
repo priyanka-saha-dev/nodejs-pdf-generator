@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    .page {
+      height: 8in;
+    }
+
+    .nopadding {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .head-text {
+      font-weight: 700;
+      text-decoration: underline;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="width: 100%">
+
+    <div class="row nopadding page">
+      <div class="col-md-12">
+        <h4 class="head-text text-uppercase mx-auto mt-2">AUTO Quotation for <strong><%=companyName%></strong>:</h4>
+
+        <table class="table table-striped">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><span>DOB</span></th>
+              <td><span><%=birthDate%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Make Name</span></th>
+              <td><span><%=makeName%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Model Name</span></th>
+              <td><span><%=modelName%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Circulation Date</span></th>
+              <td><span><%=regisDate%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Final Premium</span></th>
+              <td><span><%=premium%></span></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+
+
+</body>
+
+</html>

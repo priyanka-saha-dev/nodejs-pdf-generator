@@ -1,0 +1,72 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.4bfe1023-899d-4edd-99d4-4ca9ad687868",
+		"application": {
+			"applicationId": "amzn1.ask.skill.5b6c9886-cdf1-4741-9146-de30932e6123"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AG6XAG62IDSBPQ46B2QGEUT65GRFQSDQCZKNVE3VK3KZVIU4JMPPUSRJA6HA7IMTKCEJTL3MNZ7SO5V3HZ5KGKROJ5L2HY6GOMLA6EFWETGIQEYHIWRTYUF5ZYGMI4ALFSSB35FECKSWQEJEGLMXXGXY445WCRDJFFCDHEW7YDEVE6JHSXAKH4LZCMC6LOPLNPFZPH5GRCOKPKA"
+		}
+	},
+	"context": {
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.5b6c9886-cdf1-4741-9146-de30932e6123"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AG6XAG62IDSBPQ46B2QGEUT65GRFQSDQCZKNVE3VK3KZVIU4JMPPUSRJA6HA7IMTKCEJTL3MNZ7SO5V3HZ5KGKROJ5L2HY6GOMLA6EFWETGIQEYHIWRTYUF5ZYGMI4ALFSSB35FECKSWQEJEGLMXXGXY445WCRDJFFCDHEW7YDEVE6JHSXAKH4LZCMC6LOPLNPFZPH5GRCOKPKA"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AGL5U5XLGJJFH5IHBCGMHPB7XTD5DWSDXOBQY7M5WWI7L7MDWSJL4UF4EGVSHA4YKFBQ6C6QZ5UUCAKFL4L4ZCGLE4ER6DAOQIORYWPT4VDO6EJSI3A26AEHMPUJI6XXUUNBHKV6NUZRPQGCTEET7OYG6K2BYWR3NC7FCI57S7K7WN3MDGIRA",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLjViNmM5ODg2LWNkZjEtNDc0MS05MTQ2LWRlMzA5MzJlNjEyMyIsImV4cCI6MTU0MDIxMjMxMywiaWF0IjoxNTQwMjA4NzEzLCJuYmYiOjE1NDAyMDg3MTMsInByaXZhdGVDbGFpbXMiOnsiY29uc2VudFRva2VuIjpudWxsLCJkZXZpY2VJZCI6ImFtem4xLmFzay5kZXZpY2UuQUdMNVU1WExHSkpGSDVJSEJDR01IUEI3WFRENURXU0RYT0JRWTdNNVdXSTdMN01EV1NKTDRVRjRFR1ZTSEE0WUtGQlE2QzZRWjVVVUNBS0ZMNEw0WkNHTEU0RVI2REFPUUlPUllXUFQ0VkRPNkVKU0kzQTI2QUVITVBVSkk2WFhVVU5CSEtWNk5VWlJQUUdDVEVFVDdPWUc2SzJCWVdSM05DN0ZDSTU3UzdLN1dOM01ER0lSQSIsInVzZXJJZCI6ImFtem4xLmFzay5hY2NvdW50LkFHNlhBRzYySURTQlBRNDZCMlFHRVVUNjVHUkZRU0RRQ1pLTlZFM1ZLM0taVklVNEpNUFBVU1JKQTZIQTdJTVRLQ0VKVEwzTU5aN1NPNVYzSFo1S0dLUk9KNUwySFk2R09NTEE2RUZXRVRHSVFFWUhJV1JUWVVGNVpZR01JNEFMRlNTQjM1RkVDS1NXUUVKRUdMTVhYR1hZNDQ1V0NSREpGRkNESEVXN1lERVZFNkpIU1hBS0g0TFpDTUM2TE9QTE5QRlpQSDVHUkNPS1BLQSJ9fQ.JHOoGYbgTpsV1cDVbUSUGh0Ut9Kx65wq3rARqBF2Eo-FZoCPRY0UGdKgTnN1JlpcpN-yrVqeC7H6hi1chphQuNJGafpYKTZPbCFbC6J1bis0PEIiLL_iHXPv5DyReNf4OEOzNtRS4l9ktGHTU1KLiI8l52RN1I9jJwKEBpvFUUvtEuSe76yWFXmTOMk91LHZkAPRTwzU-FKZcWu69Rf_4xdYSOUVvINYnOg7Vr9jMy9KrcdmgEw_IadU4jkpgLjpTW-f-iU9rWRzYHI6TrQ0CURlNEfXTTwkRzK96vt5JgZKrNibDmwUZB3oXKORbZ3U6YH4NgA2LXMjhL6tHuQa8w"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.60a5892e-7c3d-4963-b47d-3d6277895443",
+		"timestamp": "2018-10-22T11:45:13Z",
+		"locale": "en-US",
+		"intent": {
+			"name": "QuotationIntent",
+			"confirmationStatus": "CONFIRMED",
+			"slots": {
+				"modelName": {
+					"name": "modelName",
+					"value": "q5",
+					"confirmationStatus": "CONFIRMED",
+					"source": "USER"
+				},
+				"birthDate": {
+					"name": "birthDate",
+					"value": "1980-01-01",
+					"confirmationStatus": "CONFIRMED",
+					"source": "USER"
+				},
+				"makeName": {
+					"name": "makeName",
+					"value": "Audi",
+					"confirmationStatus": "CONFIRMED",
+					"source": "USER"
+				},
+				"companyName": {
+					"name": "companyName",
+					"value": "axa",
+					"confirmationStatus": "CONFIRMED",
+					"source": "USER"
+				},
+				"regisDate": {
+					"name": "regisDate",
+					"value": "2018-01-01",
+					"confirmationStatus": "CONFIRMED",
+					"source": "USER"
+				}
+			}
+		},
+		"dialogState": "IN_PROGRESS"
+	}
+}
