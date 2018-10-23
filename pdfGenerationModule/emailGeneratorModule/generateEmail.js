@@ -1,4 +1,5 @@
 var nodemailer = require('nodemailer');
+var CONSTANTS = require('./../constants');
 
 /*
  * For GMAIL: (https://community.nodemailer.com/using-gmail/)
@@ -6,18 +7,18 @@ var nodemailer = require('nodemailer');
  * https://accounts.google.com/b/0/displayunlockcaptcha --> Allow
  */
 var transporter = nodemailer.createTransport({
-  service: 'gmail',
+  service: CONSTANTS.SENDER_EMAIL_SERVICE,
   auth: {
-    user: 'priyanka.njoy9@gmail.com',
-    pass: 'butterfly4$'
+    user: CONSTANTS.SENDER_EMAIL_ID,
+    pass: CONSTANTS.SENDER_EMAIL_PASSWORD
   }
 });
 
 var mailOptions = {
-  from: 'priyanka.njoy9@gmail.com',
-  to: 'priyanka.saha2@cognizant.com',
-  subject: 'Sending Email using Node.js',
-  text: 'That was easy!',
+  from: CONSTANTS.SENDER_EMAIL_ID,
+  to: CONSTANTS.RECIEVER_EMAIL_ID,
+  subject: CONSTANTS.EMAIL_SUBJECT,
+  text: CONSTANTS.EMAIL_BODY,
   attachments: [
     {
       // file on disk as an attachment

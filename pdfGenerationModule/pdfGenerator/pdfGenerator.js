@@ -5,19 +5,23 @@ var options = {
   format: 'Letter'
 };
 
-var parseCB = (err, resp) => {
-  if (err){
-    return console.log(err);
-  }
-  console.log('parsing pdf generator resp');
-  console.log(resp);
-  
-}
 
 function generatePDF(html, outputFile) {
-  pdf.create(html, options).toFile(outputFile, parseCB);
 
-  return true;
+  let generateDoc = (resolve, reject) => {
+    pdf.create(html, options)
+       .toFile(outputFile, (err, resp) => {
+        
+        if(err) {
+            return reject(err);
+          } else {
+            return resolve(resp);
+          }
+       })
+  }
+
+  return new Promise(generateDoc);
+
 }
 
 module.exports = generatePDF;
