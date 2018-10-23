@@ -18,6 +18,7 @@ var transporter = nodemailer.createTransport({
 var mailOptions = {
   from: CONSTANTS.SENDER_EMAIL_ID,
   to: CONSTANTS.RECIEVER_EMAIL_ID,
+  cc: CONSTANTS.RECIEVER_COPY_EMAIL_ID,
   subject: CONSTANTS.EMAIL_SUBJECT,
   text: CONSTANTS.EMAIL_BODY,
   attachments: [
