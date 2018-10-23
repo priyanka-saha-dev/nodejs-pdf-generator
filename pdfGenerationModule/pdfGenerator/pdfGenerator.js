@@ -1,12 +1,15 @@
 var pdf = require('html-pdf');
-//var fs = require('fs');
+var CONSTANTS = require('./../constants');
 
 var options = {
   format: 'Letter'
 };
 
 
-function generatePDF(html, outputFile) {
+function generatePDF(html) {
+
+  let outputFile = CONSTANTS.PDF_OUTPUT_DIR + 'pdf-' + new Date().getTime() + '.pdf';
+  //let outputFile = CONSTANTS.PDF_OUTPUT_DIR + 'pdf-quotation.pdf';
 
   let generateDoc = (resolve, reject) => {
     pdf.create(html, options)

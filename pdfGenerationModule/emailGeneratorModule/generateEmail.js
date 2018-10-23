@@ -1,5 +1,6 @@
 var nodemailer = require('nodemailer');
 var CONSTANTS = require('./../constants');
+var path = require('path');
 
 /*
  * For GMAIL: (https://community.nodemailer.com/using-gmail/)
@@ -21,14 +22,8 @@ var mailOptions = {
   text: CONSTANTS.EMAIL_BODY,
   attachments: [
     {
-      // file on disk as an attachment
-      filename: 'test.pdf',
+      filename: 'test.pdf',// file on disk as an attachment
       path: './output/test.pdf' // stream this file
-    },
-    {
-      // file on disk as an attachment
-      filename: 'pdf-quotation.pdf',
-      path: './output/pdf-quotation.pdf' // stream this file
     }
   ]
 };
@@ -42,9 +37,25 @@ var parseCB = (error, resp) => {
   }
 }
 
-function emailGeneratorService(filename) {
-  console.log('Mailing with attchment - ' + filename);
+function emailGeneratorService(filePath) {
+  //console.log('Mailing with attchment - ' + filePath);
+  let attachment = getFileParams(filePath)
+  mailOptions.attachments.push(attachment);
+
   return transporter.sendMail(mailOptions, parseCB);
 }
+
+function getFileParams(filePath) {
+  let filename = path.basename(filePath)
+  let filePathRelative = CONSTANTS.PDF_OUTPUT_DIR + '/' + filename;
+
+  let attachment = {
+    filename: filename,
+    path: filePathRelative
+  }
+
+  return attachment;
+}
+
 
 module.exports = emailGeneratorService;

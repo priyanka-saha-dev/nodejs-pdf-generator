@@ -1,6 +1,9 @@
 # node-pdf
 create pdf with custom template using node
 
+## Notes
+https://javascript.info/promise-basics
+
 ## dependencies
 * ```ejs``` (https://www.npmjs.com/package/ejs) - for generating HTML with custom data
 * ```html-pdf-chrome``` (https://www.npmjs.com/package/html-pdf-chrome) - for generating PDF from HTML
