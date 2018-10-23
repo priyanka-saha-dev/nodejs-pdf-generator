@@ -26,7 +26,6 @@ var mailOptions = {
 };
 
 var parseCB = (error, resp) => {
-  console.log('parsing email resp')
   if (error) {
     console.log(error);
   } else {
@@ -38,6 +37,7 @@ function emailGeneratorService(filePath) {
   //console.log('Mailing with attchment - ' + filePath);
 
   if(filePath) {
+    mailOptions.attachments = [];
     let attachment = getFileParams(filePath)
     mailOptions.attachments.push(attachment);
   }
