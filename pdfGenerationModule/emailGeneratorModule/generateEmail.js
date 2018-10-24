@@ -9,19 +9,18 @@ var path = require('path');
  */
 var transporter = nodemailer.createTransport({
   //pool: true,
-  //service: CONSTANTS.SENDER_EMAIL_SERVICE,
-  host: CONSTANTS.SENDER_EMAIL_HOST,
-  port: 465,
-  secure: true, // use SSL
+  service: CONSTANTS.SENDER_EMAIL_SERVICE,
+  //host: CONSTANTS.SENDER_EMAIL_HOST,
+  //port: 465,
+  //secure: true, // use SSL
   //proxy: 'http://proxy.cognizant.com:6050',
   auth: {
     user: CONSTANTS.SENDER_EMAIL_ID,
     pass: CONSTANTS.SENDER_EMAIL_PASSWORD
-  },
-  tls: {
-    // do not fail on invalid certs
-    rejectUnauthorized: false
   }
+  // tls: {
+  //   rejectUnauthorized: false // do not fail on invalid certs
+  // }
 });
 
 var mailOptions = {
