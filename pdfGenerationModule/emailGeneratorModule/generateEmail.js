@@ -8,10 +8,19 @@ var path = require('path');
  * https://accounts.google.com/b/0/displayunlockcaptcha --> Allow
  */
 var transporter = nodemailer.createTransport({
-  service: CONSTANTS.SENDER_EMAIL_SERVICE,
+  //pool: true,
+  //service: CONSTANTS.SENDER_EMAIL_SERVICE,
+  host: CONSTANTS.SENDER_EMAIL_HOST,
+  port: 465,
+  secure: true, // use SSL
+  //proxy: 'http://proxy.cognizant.com:6050',
   auth: {
     user: CONSTANTS.SENDER_EMAIL_ID,
     pass: CONSTANTS.SENDER_EMAIL_PASSWORD
+  },
+  tls: {
+    // do not fail on invalid certs
+    rejectUnauthorized: false
   }
 });
 
@@ -24,6 +33,12 @@ var mailOptions = {
   attachments: [
     
   ]
+  // dsn: {
+  //   id: 'ID',
+  //   return: 'headers',
+  //   notify: ['success', 'failure', 'delay'],
+  //   recipient: CONSTANTS.SENDER_EMAIL_ID
+  // }
 };
 
 var parseCB = (error, resp) => {
