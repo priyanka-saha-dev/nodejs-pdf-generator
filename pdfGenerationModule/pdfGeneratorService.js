@@ -7,7 +7,7 @@ var CONSTANTS = require('./constants');
 
 function pdfGeneratorServicefromJSON() {
 
-  var templateFile = './pdfGenerationModule/pdfTemplate/template.ejs';
+  var templateFile = './pdfGenerationModule/pdfTemplate/template-old.ejs';
 
   return dataGathererService()                        // Gets Data     
           .then(data => htmlGenerator(templateFile, data))  // Builds HTML     
