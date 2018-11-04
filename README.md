@@ -11,7 +11,7 @@ https://javascript.info/promise-basics
 ## get started
 * Run ```npm install``` once in project directory.
 
-* Start application by ```npm run serve``` from project directory and visit ```http://localhost:3000/pdf```
+* Start application by ```npm run serve``` from project directory and visit GET/POST ```http://54.197.36.158:3000/pdf```
 
 * Sample Template is in ```./pdfGenerationModule/pdfTemplate/template.ejs``` & Generated PDF will be in ```./output/``` directory.
 
