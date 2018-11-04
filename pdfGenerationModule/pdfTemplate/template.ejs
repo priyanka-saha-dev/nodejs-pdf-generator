@@ -32,7 +32,7 @@
 
     <div class="row nopadding page">
       <div class="col-md-12">
-        <h4 class="head-text text-uppercase mx-auto mt-2">AUTO Quotation for <strong><%=companyName%></strong>:</h4>
+        <h4 class="head-text text-uppercase mx-auto mt-2">Details for the AUTO Quotation for <strong><%=companyName%></strong>:</h4>
 
         <table class="table table-striped">
           <thead class="thead-light">
@@ -57,6 +57,22 @@
             <tr>
               <th scope="row"><span>Circulation Date</span></th>
               <td><span><%=regisDate%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Is Past Claims Present?</span></th>
+              <td><span><%=claims%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Is Policyholder same as Main driver?</span></th>
+              <td><span><%=ispolicyholderDriver%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Vehicle Usage?</span></th>
+              <td><span><%=usage%></span></td>
+            </tr>
+            <tr>
+              <th scope="row"><span>Email ID</span></th>
+              <td><span><%=email%></span></td>
             </tr>
             <tr>
               <th scope="row"><span>Final Premium</span></th>

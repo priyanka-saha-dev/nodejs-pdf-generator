@@ -16,8 +16,10 @@ function generatePDF(html) {
        .toFile(outputFile, (err, resp) => {
         
         if(err) {
+            console.log('problem in generating PDF from template',err)
             return reject(err);
           } else {
+            console.log('PDF generated in location ', outputFile);
             return resolve(resp);
           }
        })

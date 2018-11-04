@@ -42,14 +42,14 @@ var mailOptions = {
 
 var parseCB = (error, resp) => {
   if (error) {
-    console.log(error);
+    console.log('Problem in generating email',error);
   } else {
-    console.log('Email sent : ' + resp.response);
+    console.log('Email sent : ',resp.response);
   }
 }
 
 function emailGeneratorService(filePath) {
-  //console.log('Mailing with attchment - ' + filePath);
+  console.log('Mailing with attchment - ' + filePath);
 
   if(filePath) {
     mailOptions.attachments = [];
